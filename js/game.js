@@ -413,28 +413,28 @@ function endScreen() {
 	ctx.strokeText("Score | スコア | 점수",30,50);
 
 	ctx.font = "20px Trebuchet MS";
-	ctx.fillText("Q's | 問 | 문제:",20,150);
+	ctx.fillText("Cat | 猫 | 고양이:",20,150);
 	ctx.fillText("Time | 秒 | 초:",20,210);
 	ctx.strokeText("→",650,370);
 
 	ctx.font = "17px Trebuchet MS"
 
 	if (rightCount < 10) {
-		ctx.fillText(rightCount,173,141);
-		ctx.fillText(seconds,173,211);
-		ctx.fillText("15",181,154);
+		ctx.fillText(rightCount,185,141);
+		ctx.fillText(seconds,185,211);
+		ctx.fillText("15",193,154);
 
-		ctx.font = "35px Trebuchet MS";
-		ctx.fillText(Math.floor(score * (35 / seconds)),173,270);
+		ctx.font = "30px Trebuchet MS";
+		ctx.fillText(Math.floor(score * (30 / seconds)),185,270);
 	}
 
 	else {
-		ctx.fillText(rightCount,165,140);
-		ctx.fillText(seconds,165,211);
-		ctx.fillText("15",181,154);
+		ctx.fillText(rightCount,180,140);
+		ctx.fillText(seconds,180,211);
+		ctx.fillText("15",196,154);
 
-		ctx.font = "35px Trebuchet MS";
-		ctx.fillText(Math.floor(score * (45 / seconds)),165,270);
+		ctx.font = "30px Trebuchet MS";
+		ctx.fillText(Math.floor(score * (45 / seconds)),180,270);
 	}
 
 	ctx.font = "bold 15px Trebuchet MS"
@@ -451,8 +451,8 @@ function endScreen() {
 	ctx.stroke();
 
 	ctx.beginPath();
-	ctx.moveTo(192,131);
-	ctx.lineTo(173,152);
+	ctx.moveTo(204,131);
+	ctx.lineTo(185,152);
 
 	ctx.rect(640,343,40,40);
 	ctx.stroke();
